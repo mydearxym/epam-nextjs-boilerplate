@@ -1,22 +1,15 @@
-import Image from "next/image";
 import ParallaxGallery from './ParallaxGallery'
 
 export default function Home() {
   return (
     <div className="w-full h-full">
       <main className="w-full h-full">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">demo for epam</li>
-          <li>cards animation</li>
-        </ol>
+        <h3 className='text-2xl font-bold ml-10 mt-5'>
+          Demo animation ramdom cards
+        </h3>
+        <div className="text-align w-full mt-2 ml-10 hover:underline">
+          ref: <a href="https://business.pinterest.com/pinterest-predicts/">https://business.pinterest.com/pinterest-predicts</a>
+        </div>
         <ParallaxGallery />
       </main>
     </div>

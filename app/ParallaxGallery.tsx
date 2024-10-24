@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
+import Image from "next/image";
 
 interface CardPosition {
   x: number;
@@ -138,10 +139,12 @@ const ParallaxGallery: React.FC = () => {
               backdropFilter: 'blur(8px)'
             }}
           >
-            <img
+            <Image
               src={`/images/${index}.webp`}
               alt={`Card ${card.id}`}
               className="w-full h-full object-cover rounded-lg"
+              width={248}
+              height={248}
             />
           </div>
         </div>
