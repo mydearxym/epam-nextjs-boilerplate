@@ -134,7 +134,7 @@ const ParallaxGallery: React.FC = () => {
           }}
         >
           <div 
-            className="w-full h-full rounded-lg p-1 hover:scale-150 transition-transform shadow-lg"
+            className="w-full h-full rounded-lg p-1 hover:scale-150 hover:z-20 transition-transform shadow-lg"
             style={{
               backdropFilter: 'blur(8px)'
             }}
